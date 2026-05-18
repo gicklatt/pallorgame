@@ -1,26 +1,55 @@
-# pallorgame
+# Pallor — Website
 
-Landing page and privacy policy for **Pallor — Gothic Bouncer**, served at
-[gicklatt.github.io/pallorgame](https://gicklatt.github.io/pallorgame).
+Landing page and privacy policy for **Pallor — Gothic Bouncer**, a game by
+[Gicklatt](https://gicklatt.github.io).
 
-Plain static HTML — no build step.
+🔗 **Live:** [gicklatt.github.io/pallorgame](https://gicklatt.github.io/pallorgame)
+
+## About the game
+
+A one-thumb gothic bouncer about falling — gracefully — through the dark.
+A tiny skull tumbles down four darkening biomes (Night, Twilight, Blood
+Moon, Eclipse); hold to drift, flick up to leap. Unlock eight playable
+creatures in the Wardrobe.
+
+No ads, no timers — just timing, nerve and rhythm.
+
+## Tech stack
+
+- Plain static **HTML + CSS** — no build step
+- Hosted on **GitHub Pages**
 
 ## Structure
 
-- `index.html` — game landing page
-- `privacy/index.html` — privacy policy (App Store / Google Play URL)
-- `assets/` — icon and screenshots
-- `.nojekyll` — disables Jekyll processing
+| Path | Purpose |
+|------|---------|
+| `index.html` | Game landing page |
+| `privacy/index.html` | Privacy policy (App Store / Google Play URL) |
+| `assets/` | Icon (`icon.svg`) and screenshots |
+| `robots.txt`, `sitemap.xml` | SEO |
+| `.nojekyll` | Disables Jekyll processing |
 
-## Store URLs
+## Develop
 
-- Privacy Policy URL: `https://gicklatt.github.io/pallorgame/privacy/`
-- Support / Marketing URL: `https://gicklatt.github.io/pallorgame/`
+Open `index.html` in a browser — there is no build step. Or serve locally:
+
+```bash
+python3 -m http.server 8000   # http://localhost:8000
+```
 
 ## Deploy
 
-GitHub Pages → Settings → Pages → **Deploy from a branch** → `main` / root.
+GitHub Pages → **Settings → Pages → Deploy from a branch → `main` / root**.
+
+## Store URLs
+
+- Privacy Policy: `https://gicklatt.github.io/pallorgame/privacy/`
+- Support / Marketing: `https://gicklatt.github.io/pallorgame/`
 
 > Pallor ships with **no ads**, so it needs no `app-ads.txt`. The shared
-> `app-ads.txt` lives in the `gicklatt.github.io` repo for ad-supported
-> games only.
+> `app-ads.txt` lives in the [`gicklatt.github.io`](https://github.com/gicklatt/gicklatt.github.io)
+> repo and serves ad-supported games only.
+
+---
+
+© Gicklatt · [gicklatt@gmail.com](mailto:gicklatt@gmail.com)
