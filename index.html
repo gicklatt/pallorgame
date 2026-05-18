@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pallor — Gothic Bouncer</title>
+  <meta name="description" content="Pallor is a one-thumb gothic bouncer about falling, gracefully, through the dark. Drift, leap and chase the Eclipse." />
+  <link rel="icon" href="assets/icon.png" />
+  <meta property="og:title" content="Pallor — Gothic Bouncer" />
+  <meta property="og:description" content="A one-thumb gothic bouncer about falling, gracefully, through the dark." />
+  <meta property="og:image" content="assets/screenshots/01-night.png" />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --bg: #0a0810;
+      --panel: #14111c;
+      --line: #2a2438;
+      --text: #ece7f3;
+      --muted: #968caa;
+      --accent: #b14a6d;
+      --accent-2: #c9a24a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+    .hero { text-align: center; padding: 88px 0 56px; }
+    .hero img.icon {
+      width: 104px; height: 104px; border-radius: 24px;
+      border: 1px solid var(--line); margin-bottom: 24px;
+    }
+    .hero h1 { font-size: 52px; font-weight: 800; letter-spacing: -0.02em; }
+    .hero .sub { color: var(--accent-2); font-size: 19px; margin-top: 6px; letter-spacing: 0.04em; }
+    .hero p.lead { color: var(--muted); font-size: 18px; margin: 20px auto 28px; max-width: 600px; }
+
+    .badges { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .badge {
+      display: inline-block; padding: 11px 22px; border-radius: 10px;
+      font-size: 15px; font-weight: 600; text-decoration: none;
+      background: transparent; border: 1px solid var(--line); color: var(--muted);
+    }
+
+    .shots {
+      display: flex; gap: 14px; overflow-x: auto; padding: 8px 0 40px;
+      scroll-snap-type: x mandatory;
+    }
+    .shots img {
+      height: 380px; border-radius: 14px; border: 1px solid var(--line);
+      scroll-snap-align: center; flex: 0 0 auto;
+    }
+
+    section.block { padding: 48px 0; border-top: 1px solid var(--line); }
+    section.block h2 { font-size: 28px; font-weight: 700; margin-bottom: 24px; }
+
+    .features { display: grid; gap: 18px; }
+    @media (min-width: 640px) { .features { grid-template-columns: 1fr 1fr; } }
+    .feature {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 14px; padding: 22px;
+    }
+    .feature h3 { font-size: 17px; margin-bottom: 6px; }
+    .feature p { color: var(--muted); font-size: 15px; }
+
+    .biomes { display: flex; flex-wrap: wrap; gap: 10px; }
+    .biome {
+      padding: 8px 16px; border-radius: 999px; font-size: 14px;
+      border: 1px solid var(--line); color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 32px 0 56px; text-align: center;
+      color: var(--muted); font-size: 14px;
+    }
+    footer a { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <img class="icon" src="assets/icon.png" alt="Pallor icon" />
+      <h1>Pallor</h1>
+      <div class="sub">Drift, leap, fall in the dark</div>
+      <p class="lead">
+        A one-thumb gothic bouncer about falling — gracefully — through
+        the dark. A tiny skull tumbles down a crumbling pixel-art world;
+        hold to drift, flick up to leap.
+      </p>
+      <div class="badges">
+        <span class="badge">App Store &middot; coming soon</span>
+        <span class="badge">Google Play &middot; coming soon</span>
+      </div>
+    </header>
+
+    <div class="shots">
+      <img src="assets/screenshots/01-night.png" alt="Night biome" />
+      <img src="assets/screenshots/02-drift.png" alt="Drift mechanic" />
+      <img src="assets/screenshots/03-twilight.png" alt="Twilight biome" />
+      <img src="assets/screenshots/04-bloodmoon.png" alt="Blood Moon biome" />
+      <img src="assets/screenshots/05-eclipse.png" alt="Eclipse biome" />
+      <img src="assets/screenshots/06-wardrobe.png" alt="Wardrobe" />
+    </div>
+
+    <section class="block">
+      <h2>One thumb, total flow</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Hold to drift</h3>
+          <p>Press anywhere on the screen to drift toward that side. Flick up to leap without losing your glide.</p>
+        </div>
+        <div class="feature">
+          <h3>No ads, no timers</h3>
+          <p>Nothing breaks your run. Instant restart — from death to the next descent in a single tap.</p>
+        </div>
+        <div class="feature">
+          <h3>Eight little horrors</h3>
+          <p>Unlock eight playable creatures in the Wardrobe — a skull, a moon, an ember, a void, a pumpkin, a ghost, a bat and a toad.</p>
+        </div>
+        <div class="feature">
+          <h3>Gothic, not grim</h3>
+          <p>Hand-made pixel art, a shifting moody palette and a soundtrack that changes with every biome.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>The descent</h2>
+      <p style="color:var(--muted); margin-bottom:20px;">
+        The sky darkens the deeper you fall. Each biome is meaner than
+        the last, and each sends its own horror after you.
+      </p>
+      <div class="biomes">
+        <span class="biome">Night</span>
+        <span class="biome">Twilight</span>
+        <span class="biome">Blood Moon</span>
+        <span class="biome">Eclipse</span>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Gicklatt &middot;
+      <a href="privacy/">Privacy Policy</a> &middot;
+      <a href="mailto:gicklatt@gmail.com">gicklatt@gmail.com</a>
+    </footer>
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
