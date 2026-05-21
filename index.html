@@ -46,6 +46,11 @@
       font-size: 15px; font-weight: 600; text-decoration: none;
       background: transparent; border: 1px solid var(--line); color: var(--muted);
     }
+    a.badge {
+      color: var(--text); border-color: var(--accent);
+      transition: transform .2s ease;
+    }
+    a.badge:hover { transform: translateY(-2px); }
 
     .shots {
       display: flex; gap: 14px; overflow-x: auto; padding: 8px 0 40px;
@@ -94,7 +99,7 @@
         hold to drift, flick up to leap.
       </p>
       <div class="badges">
-        <span class="badge">App Store &middot; coming soon</span>
+        <a class="badge" href="https://apps.apple.com/us/app/pallor/id6766506412" target="_blank" rel="noopener">App Store</a>
         <span class="badge">Google Play &middot; coming soon</span>
       </div>
     </header>
